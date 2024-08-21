@@ -1,0 +1,29 @@
+@use "../../../scss/abstracts/mixins" as mixins;
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    @include mixins.breakpoint(lg) {
+        gap: 10px;
+        margin-left: 39px;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 145.455%;
+        color: var(--text-color);
+
+        @include mixins.breakpoint(lg) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__img {
+        @include mixins.breakpoint(lg) {
+            width: 24px;
+        }
+    }
+}

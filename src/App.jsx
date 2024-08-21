@@ -1,7 +1,11 @@
-import React from "react";
+import Routers from "./routers";
 
 function App() {
-    return <div>App</div>;
+    return (
+        <div>
+            <Routers />
+        </div>
+    );
 }
 
 export default App;
